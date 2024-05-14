@@ -54,6 +54,8 @@ if Cookie:
             print(message)
             if telegram_bot_token and chat_id:
                 telegram_Bot(telegram_bot_token, chat_id, message)
+            if pushplus_token:
+                pushplus_ts(pushplus_token, "nodeseek签到", message)
         else:
             print(message)
             if telegram_bot_token and chat_id:
