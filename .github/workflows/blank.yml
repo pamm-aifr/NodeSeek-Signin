@@ -6,6 +6,8 @@ on:
       - main  # 在 main 分支上进行推送时触发
   schedule:
     - cron: '00 8 * * *'  # 每天早晨 8 点执行
+  # 手动触发
+  workflow_dispatch:
 
 jobs:
   run-nodeseek-sign:
