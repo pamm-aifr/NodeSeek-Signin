@@ -5,7 +5,7 @@ on:
     branches:
       - main  # 在 main 分支上进行推送时触发
   schedule:
-    - cron: '00 8 * * *'  # 每天早晨 8 点执行
+    - cron: '0 23 * * *'  # 每天 北京时间7点（UTC：23点）执行
   # 手动触发
   workflow_dispatch:
 
