@@ -33,6 +33,7 @@ jobs:
           CHAT_ID: ${{ secrets.CHAT_ID }}
           ALI_REFRESH_TOKEN: ${{ secrets.ALI_REFRESH_TOKEN }}
           COOKIE_QUARK: ${{ secrets.COOKIE_QUARK }}
-        run: python nodeseek_sign.py
+        run: |
+             python nodeseek_sign.py
              python aliyunpan.py
              python quark.py
